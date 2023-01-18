@@ -34,6 +34,46 @@ svg{
   --color-text-dark: #FAF4E5;
   --color-background-dark: #8395CD;
 }
+.logo-container img {
+  width: 100px;
+  height: 100px;
+  display:inline-block;
+  margin:5px;
+  border-radius:50%;
+}
+.img-container {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+}
+
+.img-container img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.img-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  visibility: hidden;
+}
+
+.img-container:hover .img-label {
+  visibility: visible;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 5px;
+  border-radius: 5px;
+}
+
 
 .light-theme{
   --color-text: var(--color-text-light);
@@ -239,7 +279,7 @@ svg{
 .section{
   position: relative;
   width: 50%;
-  padding: 1000px 4%;
+  padding: 100px 4%;
   margin: 0;
   background-color: var(--color-background);
   overflow: hidden;
@@ -472,4 +512,3 @@ svg{
     font-size: 18px;
   }
 }
-
